@@ -1,0 +1,25 @@
+{
+    "name": "Artive-landing-page",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "npx tailwindcss -i ./src/css/input.css -o ./public/assets/css/style.css --watch",
+        "build": "npx tailwindcss -i ./src/css/input.css -o ./public/assets/css/style.css --minify"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@tailwindcss/aspect-ratio": "^0.4.2",
+        "@tailwindcss/forms": "^0.5.9",
+        "@tailwindcss/typography": "^0.5.15",
+        "autoprefixer": "^10.4.20",
+        "postcss": "^8.4.49",
+        "tailwindcss": "^3.4.15"
+    },
+    "dependencies": {
+        "@tailwindcss/container-queries": "^0.1.1"
+    }
+}

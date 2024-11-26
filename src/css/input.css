@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Urbane Medium";
+    src: url("./../../assets/fonts/Urbane-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Urbane Bold";
+    src: url("./../../assets/fonts/Urbane-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+header a {
+    text-decoration: none;
+    line-height: 1;
+    background: linear-gradient(0deg, #548adc, #548adc) no-repeat right bottom / 0 var(--bg-h);
+    transition: background-size 350ms;
+    --bg-h: 100%;
+    padding-bottom: 2px;
+    --bg-h: 2px;
+}
+
+header a:where(:hover, :focus-visible) {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+@layer components {
+    .sosmed-hero {
+        @apply px-4 py-3 rounded-full bg-neutral text-secondary ml-2 transition-all duration-300 ease-in-out hover:bg-secondary hover:text-neutral;
+    }
+
+    .sosmed-footer {
+        @apply px-3 py-2 rounded-full bg-neutral text-secondary ml-1 transition-all duration-300 ease-in-out hover:bg-primary hover:text-neutral;
+    }
+}
