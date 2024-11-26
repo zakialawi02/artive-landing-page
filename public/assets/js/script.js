@@ -8,6 +8,15 @@ $(document).ready(function () {
         }
     });
 
+    $("nav a").on("click", function (event) {
+        var href = $(this).attr("href");
+        if (href === "#home" || href === "./#home") {
+            event.preventDefault();
+            history.pushState(null, null, "#home");
+            $("html, body").animate({ scrollTop: 0 }, 100);
+        }
+    });
+
     // Toggle the drawer (slide in)
     $("#hamburger").click(function () {
         $("#drawer").removeClass("hidden");
