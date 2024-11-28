@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $(window).scroll(function () {
         // Check if the scroll position is more than 100px
-        if ($(this).scrollTop() > 100) {
+        if ($(this).scrollTop() > 200) {
             $("header").css("top", "0.0rem");
         } else {
             $("header").css("top", "1.5rem");
@@ -61,4 +61,16 @@ $(document).ready(function () {
             }, 300);
         }
     });
+
+    // Inisialisasi GLightbox
+    const playVideo = function () {
+        const glightbox = GLightbox({
+            selector: ".glightbox",
+            touchNavigation: false,
+            loop: false,
+            autoplayVideos: true,
+            draggable: false,
+        });
+    };
+    playVideo();
 });

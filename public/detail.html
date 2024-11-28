@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <meta
+            name="description"
+            content="Artive entertaiment melayani segala bentuk
+        kerjasama dalam optimasi sosial media, pelayanan take video professional, pengadaan talent
+        dan influencer social media, serta membantu perancangan event organizer dalam kegiatan
+        dokumentasi ataupun creative."
+        />
+        <meta
+            name="keywords"
+            content="Agency Marketing, Pemasaran Digital, Strategi Pemasaran, Optimasi Sosial Media, Jasa Dokumentasi, Video Profesional, Influencer Sosial Media, Pengadaan Talent, Creative Content, Event Organizer, Kolaborasi Brand, Multimedia Terintegrasi, Pionir Multimedia, Layanan Efektif, Layanan Efisien, Harga Kompetitif, Garansi Kerjasama, Jaminan Kepuasan, Digital Strategy, Social Media Optimization"
+        />
+
+        <meta name="robots" content="index, follow" />
+
+        <meta name="author" content="Artive Entertainment" />
+
+        <!-- Open Graph Meta Tags: Digunakan untuk optimisasi sosial media (Facebook, Twitter, dll) -->
+        <meta property="og:title" content="Arttive Creative Entertainment" />
+        <meta
+            property="og:description"
+            content="Artive entertaiment melayani segala bentuk
+        kerjasama dalam optimasi sosial media, pelayanan take video professional, pengadaan talent
+        dan influencer social media, serta membantu perancangan event organizer dalam kegiatan
+        dokumentasi ataupun creative."
+        />
+        <meta property="og:image" content="./assets/img/logo/logo-crop-black.png" />
+        <meta property="og:url" content="https://www.example.com" />
+
+        <!-- Meta Twitter Cards (untuk optimisasi di Twitter) -->
+        <meta name="twitter:title" content="Arttive Creative Entertainment" />
+        <meta
+            name="twitter:description"
+            content="Artive entertaiment melayani segala bentuk
+        kerjasama dalam optimasi sosial media, pelayanan take video professional, pengadaan talent
+        dan influencer social media, serta membantu perancangan event organizer dalam kegiatan
+        dokumentasi ataupun creative."
+        />
+        <meta name="twitter:image" content="./assets/img/logo/logo-crop-white.png" />
+
+        <link rel="canonical" href="https://www.example.com" />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.bunny.net" />
+        <link href="https://fonts.bunny.net/css?family=poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+
+        <!-- Icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css"
+            integrity="sha512-T7lIYojLrqj7eBrV1NvUSZplDBi8mFyIEGFGdox8Bic92Col3GVrscbJkL37AJoDmF2iAh81fRpO4XZukI6kbA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/css/glightbox.min.css"
+            integrity="sha512-T+KoG3fbDoSnlgEXFQqwcTC9AdkFIxhBlmoaFqYaIjq2ShhNwNao9AKaLUPMfwiBPL0ScxAtc+UYbHAgvd+sjQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <link href="./assets/css/style.css" rel="stylesheet" />
+        <link rel="shortcut icon" href="./assets/img/logo/logo-crop-white.png" type="image/x-icon" />
+
+        <title>Artive Creative Entertainment</title>
+    </head>
+    <body class="antialiased font-poppins bg-neutral">
+        <!-- Navbar -->
+        <header class="sticky z-50 w-full py-3 transition-all duration-300 ease-in-out top-6 font-urbane-medium">
+            <div class="relative flex items-center justify-between px-6">
+                <!-- Logo on the left -->
+                <div class="px-6 rounded-full shadow-sm bg-black/40 backdrop-blur-md">
+                    <a href="#" class="transition-all duration-300 hover:text-gray-300">
+                        <img src="./assets/img/logo/logo-white.png" alt="Logo" class="w-32" />
+                    </a>
+                </div>
+
+                <!-- Navigation menu (centered on desktop) -->
+                <nav class="absolute items-center hidden px-6 py-3 space-x-3 transform -translate-x-1/2 rounded-full shadow-sm left-1/2 md:flex bg-black/40 backdrop-blur-md">
+                    <div class="flex items-center space-x-6 text-white">
+                        <a href="./" class="transition-all duration-300 hover:text-gray-300">Home</a>
+                        <div class="w-px h-5 bg-gray-300"></div>
+                        <a href="./#about" class="transition-all duration-300 hover:text-gray-300">Tentang Kami</a>
+                        <div class="w-px h-5 bg-gray-300"></div>
+                        <a href="./#services" class="transition-all duration-300 hover:text-gray-300">Layanan</a>
+                    </div>
+                </nav>
+
+                <!-- Hamburger menu on mobile -->
+                <div class="flex items-center space-x-3 md:hidden">
+                    <div id="hamburger" class="px-3 py-2 font-bold text-white rounded-full shadow-sm cursor-pointer hover:bg-black/30 bg-black/40 backdrop-blur-md">
+                        <i class="ri-menu-3-line"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drawer Menu (Mobile) -->
+            <div id="drawer" class="fixed inset-0 z-40 hidden bg-secondary/50">
+                <div id="drawerContent" class="absolute top-0 right-0 w-3/4 h-full p-6 text-white transition-transform duration-300 ease-in-out transform translate-x-full backdrop-blur-md bg-secondary/90">
+                    <div class="flex justify-end">
+                        <button id="closeDrawer" class="text-3xl text-white">
+                            <i class="ri-close-line"></i>
+                        </button>
+                    </div>
+                    <nav class="mt-8 space-y-6">
+                        <a href="./" class="block transition-all duration-300 hover:text-gray-300">Home</a>
+                        <a href="./#about" class="block transition-all duration-300 hover:text-gray-300">Tentang Kami</a>
+                        <a href="./#services" class="block transition-all duration-300 hover:text-gray-300">Layanan</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main class="-mt-[4.2rem] text-secondary min-h-screen">
+            <!-- HERO -->
+            <section class="text-white">
+                <div class="relative p-4 bg-center bg-cover min-h-[20rem]">
+                    <!-- Image Background -->
+                    <img src="./assets/img/video.jpg" alt="Background Image" class="absolute inset-0 object-cover w-full h-full" />
+                    <!-- Overlay -->
+                    <div class="absolute inset-0 opacity-50 bg-secondary"></div>
+
+                    <!-- Content -->
+                    <div class="relative z-10 flex flex-col items-center justify-center h-full gap-2 p-2 pt-32">
+                        <div class="px-4 text-center md:px-10">
+                            <h2 class="py-2 text-3xl font-bold text-white md:text-4xl">Layanan Kesatu</h2>
+                        </div>
+                        <div class="px-4 text-center md:px-32">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eos magni. Consectetur repudiandae explicabo obcaecati in soluta?</p>
+                        </div>
+                        <a class="px-3 py-2 text-base bg-neutral group hover:bg-neutral/80 hover:text-secondary/80 text-secondary rounded-2xl" href="#"> <i class="text-xl ri-whatsapp-line"></i> Hubungi Kami </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Description -->
+            <section id="description" class="py-6">
+                <div class="container grid grid-cols-1 gap-6 p-6 md:grid-cols-2 lg:grid-cols-4">
+                    <div class="w-full col-span-1 p-2 space-y-3">
+                        <h3 class="text-4xl font-bold">Lorem ipsum dolor sit.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut maxime corrupti culpa nemo rem. Amet, nesciunt. Reprehenderit temporibus ab est. Fugit.</p>
+                    </div>
+                    <div class="grid grid-cols-1 col-span-3 gap-3 lg:grid-cols-2 md:grid-cols-2">
+                        <div class="p-4 bg-white shadow-md rounded-2xl">
+                            <h4 class="mb-2 text-2xl font-bold">1. Lorem, ipsum dolor.</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis sed voluptates iusto expedita quaerat quisquam maiores.</p>
+                        </div>
+                        <div class="p-4 bg-white shadow-md rounded-2xl">
+                            <h4 class="mb-2 text-2xl font-bold">2. Lorem, ipsum dolor.</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus repellendus expedita dolorem reprehenderit temporibus autem repudiandae quis ipsam harum veritatis?</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Our Works -->
+            <section id="portfolio" class="py-8">
+                <div class="container">
+                    <div class="py-12 text-center">
+                        <h3 class="text-4xl font-bold">Our Works</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, sint!</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 gap-3 pb-12 md:grid-cols-2 lg:grid-cols-3">
+                        <!-- Card Basic -->
+                        <div class="overflow-hidden rounded-2xl">
+                            <img src="https://placehold.co/600x400?text=ini images" alt="Portfolio" class="object-cover w-full h-full" />
+                        </div>
+                        <!-- Card Basic -->
+                        <div class="overflow-hidden rounded-2xl">
+                            <img src="https://placehold.co/600x400?text=ini images" alt="Portfolio" class="object-cover w-full h-full" />
+                        </div>
+                        <!-- Card Half Overlay -->
+                        <div class="relative overflow-hidden shadow-lg group rounded-2xl">
+                            <!-- Image -->
+                            <img src="https://placehold.co/600x400?text=ini+images" alt="Portfolio" class="object-cover w-full h-full" />
+                            <!-- Hover Overlay -->
+                            <div class="absolute inset-0 transition-opacity duration-300 ease-in-out opacity-0 bg-black/40 group-hover:opacity-100">
+                                <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent">
+                                    <h3 class="text-lg font-semibold text-white">Title here</h3>
+                                    <p class="text-sm text-white">Ini adalah deskripsi yang muncul ketika kartu di-hover. Anda bisa menambahkan detail lebih lanjut di sini.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card Full Overlay -->
+                        <div class="relative overflow-hidden shadow-lg group rounded-2xl">
+                            <!-- Image -->
+                            <img src="https://placehold.co/600x400?text=ini+images" alt="Portfolio" class="object-cover w-full h-full" />
+                            <!-- Hover Overlay -->
+                            <div class="absolute inset-0 flex items-start transition-opacity duration-300 ease-in-out opacity-0 bg-black/50 group-hover:opacity-100">
+                                <div class="p-4 text-lg">
+                                    <h3 class="text-xl font-semibold text-white">Title here</h3>
+                                    <a href="#" class="py-3 text-white transition-all duration-300 hover:underline hover:text-gray-300">
+                                        view
+                                        <i class="-mb-2 -ml-1 text-sm ri-arrow-right-s-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card Play Overlay GL -->
+                        <div class="relative overflow-hidden shadow-lg group rounded-2xl">
+                            <!-- Image -->
+                            <img src="https://placehold.co/600x400?text=ini+images GL" alt="Portfolio" class="object-cover w-full h-full" />
+                            <!-- Hover Overlay -->
+                            <div class="absolute inset-0 flex items-center justify-center bg-black/30">
+                                <a href="https://drive.google.com/file/d/1X4qkDDASAVBUDlxotHbfcH0Ej_kUl6Ci/preview" data-gallery="video1" type="button" role="button" class="p-4 text-white hover:text-gray-300 glightbox">
+                                    <i class="text-5xl ri-play-circle-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Card Play Overlay GL -->
+                        <div class="relative overflow-hidden shadow-lg group rounded-2xl">
+                            <!-- Image -->
+                            <img src="https://placehold.co/600x400?text=ini+images GL" alt="Portfolio" class="object-cover w-full h-full" />
+                            <!-- Hover Overlay -->
+                            <div class="absolute inset-0 flex items-center justify-center bg-black/30">
+                                <a href="https://youtu.be/-wb2PAx6aEs" data-gallery="video2" type="button" role="button" class="p-4 text-white hover:text-gray-300 glightbox">
+                                    <i class="text-5xl ri-play-circle-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Card Play Overlay VNL -->
+                        <div class="relative overflow-hidden shadow-lg group rounded-2xl">
+                            <!-- Image -->
+                            <img src="https://placehold.co/600x400?text=ini+images VNL" alt="Portfolio" class="object-cover w-full h-full" />
+                            <!-- Hover Overlay -->
+                            <div class="absolute inset-0 flex items-center justify-center bg-black/30">
+                                <button onclick="togglePlayVideo('https://www.youtube.com/embed/-wb2PAx6aEs')" class="p-4 text-white hover:text-gray-300">
+                                    <i class="text-5xl ri-play-circle-line"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Card Play Overlay VNL -->
+                        <div class="relative overflow-hidden shadow-lg group rounded-2xl">
+                            <!-- Image -->
+                            <img src="https://placehold.co/600x400?text=ini+images VNL" alt="Portfolio" class="object-cover w-full h-full" />
+                            <!-- Hover Overlay -->
+                            <div class="absolute inset-0 flex items-center justify-center bg-black/30">
+                                <button onclick="togglePlayVideo('https://drive.google.com/file/d/1X4qkDDASAVBUDlxotHbfcH0Ej_kUl6Ci/preview')" class="p-4 text-white hover:text-gray-300">
+                                    <i class="text-5xl ri-play-circle-line"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA-1 -->
+            <section id="cta-1">
+                <div class="flex items-center justify-center p-5 m-6 md:p-10 min-h-48 bg-gradient-to-l from-primary/90 to-secondary/70 rounded-3xl">
+                    <div class="flex flex-col items-center justify-between w-full gap-5 md:flex-row">
+                        <div class="w-full text-neutral">
+                            <p class="mt-1 text-lg md:text-3xl font-urbane-medium">
+                                Siap Meningkatkan Brand Anda di Dunia Digital? Hubungi Artive Entertainment Sekarang dan Raih Kesuksesan dengan Strategi Pemasaran Digital yang Kreatif dan Efektif!
+                            </p>
+                        </div>
+                        <div class="flex w-full md:w-2/5 md:justify-end">
+                            <a class="px-3 py-2 bg-neutral group text-secondary rounded-2xl" href="#">
+                                Hubungi Kami
+                                <span class="inline-block transition-all duration-300 transform group-hover:rotate-45 group-hover:translate-x-1">
+                                    <i class="ri-arrow-right-up-line"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Video Overlay -->
+        <div id="video-overlay" class="fixed inset-0 z-50 items-center justify-center hidden bg-black/90" onclick="closeVideo()">
+            <!-- Loader -->
+            <div id="video-loader" class="absolute flex items-center justify-center w-full h-full">
+                <div class="w-12 h-12 border-4 border-white rounded-full border-t-transparent animate-spin"></div>
+            </div>
+            <div class="relative flex items-center justify-center w-full h-full" onclick="event.stopPropagation()">
+                <!-- Close Button -->
+                <div class="absolute top-4 right-4">
+                    <button onclick="closeVideo()" class="p-5 text-3xl font-bold text-white"><i class="ri-close-large-fill"></i></button>
+                </div>
+                <!-- Video -->
+                <iframe id="video-frame" class="hidden w-4/5 h-4/5" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <footer class="bg-secondary text-neutral">
+            <div class="container">
+                <div class="flex items-center justify-between py-4 pt-6">
+                    <div class="">
+                        <a href="#home" class="">
+                            <img src="./assets/img/logo/logo-white.png" alt="Logo" class="w-40" />
+                        </a>
+                    </div>
+                    <div class="">
+                        <a href="https://www.instagram.com/" class="sosmed-footer"><i class="ri-instagram-line"></i></a>
+                        <a href="https://twitter.com/" class="sosmed-footer"><i class="ri-twitter-x-line"></i></a>
+                        <a href="https://www.tiktok.com/" class="sosmed-footer"><i class="ri-tiktok-line"></i></a>
+                    </div>
+                </div>
+
+                <hr class="border-t-2 border-neutral/30" />
+
+                <div class="">
+                    <p class="py-2 pb-8 text-sm">© All rights reserved. Design by <span class="font-bold">Artive</span></p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/js/glightbox.min.js"
+            integrity="sha512-RBWI5Qf647bcVhqbEnRoL4KuUT+Liz+oG5jtF+HP05Oa5088M9G0GxG0uoHR9cyq35VbjahcI+Hd1xwY8E1/Kg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="./assets/js/script.js"></script>
+        <script>
+            function togglePlayVideo(url) {
+                const overlay = document.getElementById("video-overlay");
+                const videoFrame = document.getElementById("video-frame");
+                const loader = document.getElementById("video-loader");
+
+                // Tampilkan overlay dan loader
+                overlay.classList.remove("hidden");
+                loader.classList.remove("hidden");
+                videoFrame.classList.add("hidden");
+
+                // Mencegah scroll pada halaman
+                document.body.classList.add("overflow-hidden");
+
+                // Set URL video ke iframe
+                videoFrame.src = url;
+
+                // Ketika iframe selesai dimuat
+                videoFrame.onload = () => {
+                    loader.classList.add("hidden"); // Sembunyikan loader
+                    videoFrame.classList.remove("hidden"); // Tampilkan video
+                };
+            }
+
+            function closeVideo() {
+                const overlay = document.getElementById("video-overlay");
+                const videoFrame = document.getElementById("video-frame");
+
+                // Menyembunyikan overlay
+                overlay.classList.add("hidden");
+
+                // Menghapus URL video untuk menghentikan video
+                videoFrame.src = "";
+
+                // Mengizinkan scroll pada halaman
+                document.body.classList.remove("overflow-hidden");
+
+                // Reset loader state
+                const loader = document.getElementById("video-loader");
+                loader.classList.remove("hidden");
+                videoFrame.classList.add("hidden");
+            }
+        </script>
+    </body>
+</html>

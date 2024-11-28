@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="id">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -41,7 +42,7 @@
         dan influencer social media, serta membantu perancangan event organizer dalam kegiatan
         dokumentasi ataupun creative."
         />
-        <meta name="twitter:image" content="./assets/img/logo/logo-crop-black.png" />
+        <meta name="twitter:image" content="./assets/img/logo/logo-crop-white.png" />
 
         <link rel="canonical" href="https://www.example.com" />
 
@@ -59,7 +60,7 @@
         />
 
         <link href="./assets/css/style.css" rel="stylesheet" />
-        <link rel="shortcut icon" href="./assets/img/logo/logo-crop-black.png" type="image/x-icon" />
+        <link rel="shortcut icon" href="./assets/img/logo/logo-crop-white.png" type="image/x-icon" />
 
         <title>Artive Creative Entertainment</title>
     </head>
@@ -77,7 +78,7 @@
                 <!-- Navigation menu (centered on desktop) -->
                 <nav class="absolute items-center hidden px-6 py-3 space-x-3 transform -translate-x-1/2 rounded-full shadow-sm left-1/2 md:flex bg-black/40 backdrop-blur-md">
                     <div class="flex items-center space-x-6 text-white">
-                        <a href="./#home" class="transition-all duration-300 hover:text-gray-300">Home</a>
+                        <a href="./#" class="transition-all duration-300 hover:text-gray-300">Home</a>
                         <div class="w-px h-5 bg-gray-300"></div>
                         <a href="./#about" class="transition-all duration-300 hover:text-gray-300">Tentang Kami</a>
                         <div class="w-px h-5 bg-gray-300"></div>
@@ -102,32 +103,44 @@
                         </button>
                     </div>
                     <nav class="mt-8 space-y-6">
-                        <a href="#home" class="block transition-all duration-300 hover:text-gray-300">Home</a>
-                        <a href="#about" class="block transition-all duration-300 hover:text-gray-300">Tentang Kami</a>
-                        <a href="#services" class="block transition-all duration-300 hover:text-gray-300">Layanan</a>
+                        <a href="./#" class="block transition-all duration-300 hover:text-gray-300">Home</a>
+                        <a href="./#about" class="block transition-all duration-300 hover:text-gray-300">Tentang Kami</a>
+                        <a href="./#services" class="block transition-all duration-300 hover:text-gray-300">Layanan</a>
                     </nav>
                 </div>
             </div>
         </header>
 
-        <main class="-mt-[4.2rem] md:-mt-[4rem] text-secondary">
+        <main class="-mt-[4.2rem] md:-mt-[4rem] text-secondary min-h-screen">
             <!-- HERO -->
             <section id="home" class="text-white">
-                <div class="relative m-0 md:m-3 h-screen md:h-[96vh] bg-cover bg-center rounded-none md:rounded-2xl p-4" style="background-image: url('./assets/img/hero-img.jpg')">
+                <div class="relative m-0 md:m-3 h-screen md:h-[96vh] bg-cover bg-center rounded-none md:rounded-2xl p-4">
+                    <!-- Video Background -->
+                    <!-- <video autoplay muted loop playsinline class="absolute inset-0 object-cover w-full h-full rounded-none md:rounded-2xl">
+                        <source src="./assets/hero-video.mp4" type="video/mp4" />
+                        <img src="./assets/img/hero-img.jpg" alt="Background Image" class="object-cover w-full h-full" />
+                    </video> -->
+
+                    <!-- Image Background -->
+                    <img src="./assets/img/hero-img.jpg" alt="Background Image" class="absolute inset-0 object-cover w-full h-full rounded-none md:rounded-2xl" />
+
+                    <!-- Overlay -->
                     <div class="absolute inset-0 rounded-none opacity-50 bg-secondary md:rounded-2xl"></div>
+
+                    <!-- Content -->
                     <div class="relative z-10 flex flex-col items-center justify-center h-full gap-5 p-3 pl-6 md:justify-start md:flex-row">
-                        <div class="">
+                        <div>
                             <h2 class="text-4xl md:text-[4rem] font-bold py-3 text-white">Welcome to Artive</h2>
                             <p class="mt-1 text-sm text-white text-md md:text-lg">Menghubungkan Kreativitas dan Strategi untuk Keunggulan Digital Anda.</p>
 
                             <div class="absolute bottom-0 left-0 p-2 mb-8">
-                                <a href="#" class="sosmed-hero"><i class="ri-instagram-line"></i></a>
-                                <a href="#" class="sosmed-hero"><i class="ri-twitter-x-line"></i></a>
-                                <a href="#" class="sosmed-hero"><i class="ri-tiktok-line"></i></a>
+                                <a href="https://www.instagram.com/" class="sosmed-hero"><i class="ri-instagram-line"></i></a>
+                                <a href="https://twitter.com/" class="sosmed-hero"><i class="ri-twitter-x-line"></i></a>
+                                <a href="https://www.tiktok.com/" class="sosmed-hero"><i class="ri-tiktok-line"></i></a>
                             </div>
                         </div>
                         <div class="absolute hidden md:block bottom-0 right-0 w-[28rem] p-3 rounded-xl bg-neutral/25">
-                            <h4 class="text-2xl font-bold">Artive Entertainment</h4>
+                            <h3 class="text-2xl font-bold">Artive Entertainment</h3>
                             <p class="text-sm">
                                 Bangun Citra Digital Anda Bersama Artive Entertainment! Optimalkan media sosial, ciptakan konten video profesional, dan jangkau audiens lebih luas dengan talent terbaik. Mari wujudkan strategi pemasaran kreatif yang
                                 membawa bisnis Anda ke level berikutnya. Hubungi kami sekarang untuk mulai berkolaborasi!
@@ -157,9 +170,7 @@
                         bisnis Anda ke level berikutnya. Hubungi kami sekarang untuk mulai berkolaborasi!
                     </p>
                     <div class="flex items-center justify-between py-3">
-                        <div class="">
-                            <a href="mailto:9QrV7@example.com" class="py-2 text-base hover:text-neutral/80"><i class="ri-mail-line"></i> 9QrV7@example.com</a>
-                        </div>
+                        <div class=""></div>
                         <a class="px-3 py-2 text-base bg-neutral group hover:bg-neutral/80 hover:text-secondary/80 text-secondary rounded-2xl" href="#">
                             Hubungi Kami
                             <span class="inline-block transition-all duration-300 transform group-hover:rotate-45 group-hover:translate-x-1">
@@ -171,7 +182,7 @@
             </section>
 
             <!-- ABOUT -->
-            <section id="about" class="min-h-screen">
+            <section id="about" class="">
                 <div class="container">
                     <div class="py-16 text-center">
                         <h3 class="text-4xl font-bold">Tentang Kami</h3>
@@ -181,14 +192,14 @@
                     <div class="flex flex-col items-center justify-center gap-10 pb-16 md:flex-row">
                         <div class="w-full md:w-1/2">
                             <div class="relative flex flex-col pr-16 overflow-hidden">
-                                <div class="absolute top-0 right-0 flex flex-col justify-center w-4/6 px-12 transition-all bg-primary py-14 rounded-xl">
+                                <div class="absolute top-0 right-0 flex flex-col justify-center w-4/6 px-6 transition-all bg-primary py-7 md:py-10 md:px-8 rounded-xl">
                                     <h2 class="text-xl text-neutral">
                                         <q class="text-base font-bold md:text-xl">Kami hadir untuk membawa brand Anda lebih dekat dengan audiens dan menjadikan setiap proyek sebagai langkah besar menuju kesuksesan digital.</q>
                                     </h2>
                                 </div>
                                 <span class="mt-2 mb-8"></span>
                                 <div class="overflow-hidden rounded-xl">
-                                    <img src="./assets/img/about-img.jpg" alt="Foto" />
+                                    <img src="./assets/img/about-img.jpg" alt="Foto Tentang Kami" />
                                 </div>
                             </div>
                         </div>
@@ -230,7 +241,7 @@
             </section>
 
             <!-- SERVICES -->
-            <section id="services" class="min-h-screen">
+            <section id="services" class="">
                 <div class="container">
                     <div class="py-16 text-center">
                         <h3 class="text-4xl font-bold">Layanan Kami</h3>
@@ -238,13 +249,13 @@
                     </div>
 
                     <div class="grid grid-cols-1 gap-3 pb-12 md:grid-cols-2">
-                        <div class="w-full flex max-w-[40rem] overflow-hidden bg-primary">
+                        <div class="w-full flex max-w-[50rem] overflow-hidden bg-primary">
                             <!-- Bagian Teks -->
                             <div class="w-[60%] p-4 flex flex-col justify-end">
                                 <h3 class="text-xl font-bold text-white">Photo</h3>
-                                <p class="mt-1 text-sm text-white">Abadikan momen berharga Anda dengan fotografi berkualitas tinggi, dari katalog produk hingga pernikahan dan acara khusus.</p>
+                                <p class="mt-1 text-white">Abadikan momen berharga Anda dengan fotografi berkualitas tinggi, dari katalog produk hingga pernikahan dan acara khusus.</p>
                                 <div class="self-end py-2">
-                                    <a class="px-3 py-2 text-sm bg-neutral group text-secondary rounded-2xl" href="#">
+                                    <a class="px-3 py-2 text-sm bg-neutral group text-secondary rounded-2xl" href="./layanan/photo.html">
                                         See more
                                         <span class="inline-block transition-all duration-300 transform group-hover:rotate-45 group-hover:translate-x-1">
                                             <i class="ri-arrow-right-up-line"></i>
@@ -255,16 +266,16 @@
 
                             <!-- Bagian Gambar -->
                             <div class="w-[40%]">
-                                <img src="./assets/img/photo.jpg" alt="Body Image" class="object-cover object-center w-full h-full" />
+                                <img src="./assets/img/photo.jpg" alt="Feature Image Service" class="object-cover object-center w-full h-full" />
                             </div>
                         </div>
-                        <div class="w-full flex max-w-[40rem] overflow-hidden bg-primary">
+                        <div class="w-full flex max-w-[50rem] overflow-hidden bg-primary">
                             <!-- Bagian Teks -->
                             <div class="w-[60%] p-4 flex flex-col justify-end">
                                 <h3 class="text-xl font-bold text-white">Video</h3>
-                                <p class="mt-1 text-sm text-white">Membuat momen tak terlupakan dengan kualitas visual yang memukau, mulai dari profil perusahaan hingga dokumentasi acara dan video kreatif lainnya.</p>
+                                <p class="mt-1 text-white">Membuat momen tak terlupakan dengan kualitas visual yang memukau, mulai dari profil perusahaan hingga dokumentasi acara dan video kreatif lainnya.</p>
                                 <div class="self-end py-2">
-                                    <a class="px-3 py-2 text-sm bg-neutral group text-secondary rounded-2xl" href="#">
+                                    <a class="px-3 py-2 text-sm bg-neutral group text-secondary rounded-2xl" href="./layanan/video.html">
                                         See more
                                         <span class="inline-block transition-all duration-300 transform group-hover:rotate-45 group-hover:translate-x-1">
                                             <i class="ri-arrow-right-up-line"></i>
@@ -275,16 +286,16 @@
 
                             <!-- Bagian Gambar -->
                             <div class="w-[40%]">
-                                <img src="./assets/img/video.jpg" alt="Body Image" class="object-cover object-center w-full h-full" />
+                                <img src="./assets/img/video.jpg" alt="Feature Image Service" class="object-cover object-center w-full h-full" />
                             </div>
                         </div>
-                        <div class="w-full flex max-w-[40rem] overflow-hidden bg-primary">
+                        <div class="w-full flex max-w-[50rem] overflow-hidden bg-primary">
                             <!-- Bagian Teks -->
                             <div class="w-[60%] p-4 flex flex-col justify-end">
                                 <h3 class="text-xl font-bold text-white">Talent</h3>
-                                <p class="mt-1 text-sm text-white">Penuhi kebutuhan acara Anda dengan talenta profesional, seperti voice over, MC, pembawa acara, hingga produser jingle dan pengumuman radio.</p>
+                                <p class="mt-1 text-white">Penuhi kebutuhan acara Anda dengan talenta profesional, seperti voice over, MC, pembawa acara, hingga produser jingle dan pengumuman radio.</p>
                                 <div class="self-end py-2">
-                                    <a class="px-3 py-2 text-sm bg-neutral group text-secondary rounded-2xl" href="#">
+                                    <a class="px-3 py-2 text-sm bg-neutral group text-secondary rounded-2xl" href="./layanan/talent.html">
                                         See more
                                         <span class="inline-block transition-all duration-300 transform group-hover:rotate-45 group-hover:translate-x-1">
                                             <i class="ri-arrow-right-up-line"></i>
@@ -295,16 +306,16 @@
 
                             <!-- Bagian Gambar -->
                             <div class="w-[40%]">
-                                <img src="./assets/img/talent.jpg" alt="Body Image" class="object-cover object-center w-full h-full" />
+                                <img src="./assets/img/talent.jpg" alt="Feature Image Service" class="object-cover object-center w-full h-full" />
                             </div>
                         </div>
-                        <div class="w-full flex max-w-[40rem] overflow-hidden bg-primary">
+                        <div class="w-full flex max-w-[50rem] overflow-hidden bg-primary">
                             <!-- Bagian Teks -->
                             <div class="w-[60%] p-4 flex flex-col justify-end">
                                 <h3 class="text-xl font-bold text-white">Social Media Optimization</h3>
-                                <p class="mt-1 text-sm text-white">Ciptakan konten menarik untuk media sosial Anda, termasuk feed Instagram, Reels, TikTok, YouTube Shorts, dan WhatsApp Blasting.</p>
+                                <p class="mt-1 text-white">Ciptakan konten menarik untuk media sosial Anda, termasuk feed Instagram, Reels, TikTok, YouTube Shorts, dan WhatsApp Blasting.</p>
                                 <div class="self-end py-2">
-                                    <a class="px-3 py-2 text-sm bg-neutral group text-secondary rounded-2xl" href="#">
+                                    <a class="px-3 py-2 text-sm bg-neutral group text-secondary rounded-2xl" href="./layanan/sosmed.html">
                                         See more
                                         <span class="inline-block transition-all duration-300 transform group-hover:rotate-45 group-hover:translate-x-1">
                                             <i class="ri-arrow-right-up-line"></i>
@@ -315,16 +326,16 @@
 
                             <!-- Bagian Gambar -->
                             <div class="w-[40%]">
-                                <img src="./assets/img/sosial media.jpg" alt="Body Image" class="object-cover object-center w-full h-full" />
+                                <img src="./assets/img/sosial media.jpg" alt="Feature Image Service" class="object-cover object-center w-full h-full" />
                             </div>
                         </div>
-                        <div class="w-full flex max-w-[40rem] overflow-hidden bg-primary">
+                        <div class="w-full flex max-w-[50rem] overflow-hidden bg-primary">
                             <!-- Bagian Teks -->
                             <div class="w-[60%] p-4 flex flex-col justify-end">
                                 <h3 class="text-xl font-bold text-white">Jasa & Sewa</h3>
-                                <p class="mt-1 text-sm text-white">Kami menawarkan berbagai layanan dan penyewaan peralatan untuk acara Anda, dari wedding organizer hingga photobooth studio dan sablon kemasan.</p>
+                                <p class="mt-1 text-white">Kami menawarkan berbagai layanan dan penyewaan peralatan untuk acara Anda, dari wedding organizer hingga photobooth studio dan sablon kemasan.</p>
                                 <div class="self-end py-2">
-                                    <a class="px-3 py-2 text-sm bg-neutral group text-secondary rounded-2xl" href="#">
+                                    <a class="px-3 py-2 text-sm bg-neutral group text-secondary rounded-2xl" href="./layanan/jasa.html">
                                         See more
                                         <span class="inline-block transition-all duration-300 transform group-hover:rotate-45 group-hover:translate-x-1">
                                             <i class="ri-arrow-right-up-line"></i>
@@ -335,16 +346,16 @@
 
                             <!-- Bagian Gambar -->
                             <div class="w-[40%]">
-                                <img src="./assets/img/service.jpg" alt="Body Image" class="object-cover object-center w-full h-full" />
+                                <img src="./assets/img/service.jpg" alt="Feature Image Service" class="object-cover object-center w-full h-full" />
                             </div>
                         </div>
-                        <div class="w-full flex max-w-[40rem] overflow-hidden bg-primary">
+                        <div class="w-full flex max-w-[50rem] overflow-hidden bg-primary">
                             <!-- Bagian Teks -->
                             <div class="w-[60%] p-4 flex flex-col justify-end">
-                                <h3 class="text-xl font-bold text-white">Branding/Marketing</h3>
-                                <p class="mt-1 text-sm text-white">Bantu bisnis Anda berkembang dengan desain logo yang kreatif, pembuatan website, dan layanan pemasaran yang efektif di berbagai platform digital.</p>
+                                <h3 class="text-xl font-bold text-white">Branding / Marketing</h3>
+                                <p class="mt-1 text-white">Bantu bisnis Anda berkembang dengan desain logo yang kreatif, pembuatan website, dan layanan pemasaran yang efektif di berbagai platform digital.</p>
                                 <div class="self-end py-2">
-                                    <a class="px-3 py-2 text-sm bg-neutral group text-secondary rounded-2xl" href="#">
+                                    <a class="px-3 py-2 text-sm bg-neutral group text-secondary rounded-2xl" href="./layanan/branding.html">
                                         See more
                                         <span class="inline-block transition-all duration-300 transform group-hover:rotate-45 group-hover:translate-x-1">
                                             <i class="ri-arrow-right-up-line"></i>
@@ -355,7 +366,7 @@
 
                             <!-- Bagian Gambar -->
                             <div class="w-[40%]">
-                                <img src="./assets/img/branding.jpg" alt="Body Image" class="object-cover object-center w-full h-full" />
+                                <img src="./assets/img/branding.jpg" alt="Feature Image Service" class="object-cover object-center w-full h-full" />
                             </div>
                         </div>
                     </div>
@@ -432,10 +443,12 @@
 
             <!-- CTA-1 -->
             <section id="cta-1">
-                <div class="flex items-center justify-center p-10 m-6 min-h-48 bg-gradient-to-l from-primary/90 to-secondary/70 rounded-3xl">
+                <div class="flex items-center justify-center p-5 m-6 md:p-10 min-h-48 bg-gradient-to-l from-primary/90 to-secondary/70 rounded-3xl">
                     <div class="flex flex-col items-center justify-between w-full gap-5 md:flex-row">
                         <div class="w-full text-neutral">
-                            <p class="mt-1 text-3xl font-urbane-medium">Siap Meningkatkan Brand Anda di Dunia Digital? Hubungi Artive Entertainment Sekarang dan Raih Kesuksesan dengan Strategi Pemasaran Digital yang Kreatif dan Efektif!</p>
+                            <p class="mt-1 text-lg md:text-3xl font-urbane-medium">
+                                Siap Meningkatkan Brand Anda di Dunia Digital? Hubungi Artive Entertainment Sekarang dan Raih Kesuksesan dengan Strategi Pemasaran Digital yang Kreatif dan Efektif!
+                            </p>
                         </div>
                         <div class="flex w-full md:w-2/5 md:justify-end">
                             <a class="px-3 py-2 bg-neutral group text-secondary rounded-2xl" href="#">
@@ -455,13 +468,13 @@
                 <div class="flex items-center justify-between py-4 pt-6">
                     <div class="">
                         <a href="#home" class="">
-                            <img src="./assets/img/logo/logo-white.png" alt="logo" class="w-40" />
+                            <img src="./assets/img/logo/logo-white.png" alt="Logo" class="w-40" />
                         </a>
                     </div>
                     <div class="">
-                        <a href="#" class="sosmed-footer"><i class="ri-instagram-line"></i></a>
-                        <a href="#" class="sosmed-footer"><i class="ri-twitter-x-line"></i></a>
-                        <a href="#" class="sosmed-footer"><i class="ri-tiktok-line"></i></a>
+                        <a href="https://www.instagram.com/" class="sosmed-footer"><i class="ri-instagram-line"></i></a>
+                        <a href="https://twitter.com/" class="sosmed-footer"><i class="ri-twitter-x-line"></i></a>
+                        <a href="https://www.tiktok.com/" class="sosmed-footer"><i class="ri-tiktok-line"></i></a>
                     </div>
                 </div>
 
