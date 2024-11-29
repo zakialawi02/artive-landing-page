@@ -11,48 +11,6 @@ $(document).ready(function () {
     };
     playVideo();
 
-    function togglePlayVideo(url) {
-        const overlay = document.getElementById("video-overlay");
-        const videoFrame = document.getElementById("video-frame");
-        const loader = document.getElementById("video-loader");
-
-        // Tampilkan overlay dan loader
-        overlay.classList.remove("hidden");
-        loader.classList.remove("hidden");
-        videoFrame.classList.add("hidden");
-
-        // Mencegah scroll pada halaman
-        document.body.classList.add("overflow-hidden");
-
-        // Set URL video ke iframe
-        videoFrame.src = url;
-
-        // Ketika iframe selesai dimuat
-        videoFrame.onload = () => {
-            loader.classList.add("hidden"); // Sembunyikan loader
-            videoFrame.classList.remove("hidden"); // Tampilkan video
-        };
-    }
-
-    function closeVideo() {
-        const overlay = document.getElementById("video-overlay");
-        const videoFrame = document.getElementById("video-frame");
-
-        // Menyembunyikan overlay
-        overlay.classList.add("hidden");
-
-        // Menghapus URL video untuk menghentikan video
-        videoFrame.src = "";
-
-        // Mengizinkan scroll pada halaman
-        document.body.classList.remove("overflow-hidden");
-
-        // Reset loader state
-        const loader = document.getElementById("video-loader");
-        loader.classList.remove("hidden");
-        videoFrame.classList.add("hidden");
-    }
-
     // Ambil semua input radio dan kartu
     const radiosWorks = document.querySelectorAll('input[name="works"]');
     const cardsPortfolio = document.querySelectorAll(".work-portfolio");
@@ -73,4 +31,69 @@ $(document).ready(function () {
             });
         });
     });
+
+    // Fungsi untuk menutup modal
+    $("#closeModal").on("click", function () {
+        $("#modalOverlay").animate({ opacity: 0 }, 100, function () {
+            $(this).addClass("hidden");
+        });
+        $("#modal").removeClass("scale-100 opacity-100").addClass("scale-95 opacity-0").animate({ opacity: 0 }, 100);
+        $("#modal-body").html("");
+    });
+
+    // Menutup modal jika area di luar modal diklik
+    $("#modalOverlay").on("click", function (event) {
+        if (event.target === this) {
+            $("#closeModal").trigger("click");
+        }
+    });
 });
+
+function togglePlayVideo(url) {
+    // Tampilkan overlay dan loader
+    $("#video-overlay").removeClass("hidden");
+    $("#video-loader").removeClass("hidden");
+    $("#video-frame").addClass("hidden");
+    // Mencegah scroll pada halaman
+    $("body").addClass("overflow-hidden");
+    // Set URL video ke iframe
+    $("#video-frame").attr("src", url);
+    // Ketika iframe selesai dimuat
+    $("#video-frame").on("load", function () {
+        $("#video-loader").addClass("hidden"); // Sembunyikan loader
+        $("#video-frame").removeClass("hidden"); // Tampilkan video
+    });
+}
+
+function closeVideo() {
+    // Menyembunyikan overlay
+    $("#video-overlay").addClass("hidden");
+    // Menghapus URL video untuk menghentikan video
+    $("#video-frame").attr("src", "");
+    // Mengizinkan scroll pada halaman
+    $("body").removeClass("overflow-hidden");
+    // Reset loader state
+    $("#video-loader").removeClass("hidden");
+    $("#video-frame").addClass("hidden");
+}
+
+// Fungsi untuk membuka modal
+function openModal(element) {
+    event.preventDefault();
+    // Mengambil parent dari elemen yang diklik
+    const parent = $(element).closest(".work-portfolio");
+    const image = parent.find("img").attr("src");
+    const title = parent.find("h3").text();
+    const description = $(element).data("description");
+    // Menyusun HTML untuk modal body secara dinamis
+    const modalContent = `
+      <img src="${image}" alt="Modal Image" class="w-full mb-3" />
+      <h3 class="text-xl font-semibold mb-2">${title}</h3>
+      <p class="text-gray-600 mb-3">${description}</p>
+    `;
+    // Memasukkan konten ke dalam modal-body
+    $("#modal-body").html(modalContent);
+    // Menampilkan modal
+    $("#modalOverlay").removeClass("hidden").animate({ opacity: 1 }, 100);
+    $("#modal").removeClass("scale-95 opacity-0").addClass("scale-100 opacity-100").animate({ opacity: 1 }, 100);
+}
