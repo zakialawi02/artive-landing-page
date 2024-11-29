@@ -96,17 +96,25 @@
 
             <!-- Drawer Menu (Mobile) -->
             <div id="drawer" class="fixed inset-0 z-40 hidden bg-secondary/50">
-                <div id="drawerContent" class="absolute top-0 right-0 w-3/4 h-full p-6 text-white transition-transform duration-300 ease-in-out transform translate-x-full backdrop-blur-md bg-secondary/90">
-                    <div class="flex justify-end">
-                        <button id="closeDrawer" class="text-3xl text-white">
-                            <i class="ri-close-line"></i>
-                        </button>
+                <div id="drawerContent" class="absolute top-0 right-0 flex flex-col justify-between w-3/4 h-full p-6 text-white transition-transform duration-300 ease-in-out transform translate-x-full backdrop-blur-md bg-secondary/90">
+                    <div>
+                        <div class="flex justify-end">
+                            <button id="closeDrawer" class="text-3xl text-white">
+                                <i class="ri-close-line"></i>
+                            </button>
+                        </div>
+                        <nav class="mt-8 space-y-6">
+                            <a href="./#" class="block transition-all duration-300 hover:text-gray-300">Home</a>
+                            <a href="./#about" class="block transition-all duration-300 hover:text-gray-300">Tentang Kami</a>
+                            <a href="./#services" class="block transition-all duration-300 hover:text-gray-300">Layanan</a>
+                        </nav>
                     </div>
-                    <nav class="mt-8 space-y-6">
-                        <a href="./#" class="block transition-all duration-300 hover:text-gray-300">Home</a>
-                        <a href="./#about" class="block transition-all duration-300 hover:text-gray-300">Tentang Kami</a>
-                        <a href="./#services" class="block transition-all duration-300 hover:text-gray-300">Layanan</a>
-                    </nav>
+                    <!-- Kontak Email di Bawah -->
+                    <div class="mt-8 space-y-3">
+                        <p class="mb-4 text-sm text-gray-300">Hubungi kami:</p>
+                        <a href="mailto:contact@example.com" class="block font-semibold transition-all duration-300 hover:text-gray-400">contact@example.com</a>
+                        <a href="tel:+6281234567890" class="block mt-2 font-semibold transition-all duration-300 hover:text-gray-400">+62 812-3456-7890</a>
+                    </div>
                 </div>
             </div>
         </header>
@@ -206,14 +214,14 @@
                         <div class="w-full md:w-1/2">
                             <div class="mb-6">
                                 <h4 class="text-3xl font-bold">Artive Entertainment</h4>
-                                <p class="mt-1">
+                                <p class="mt-1 text-base md:text-lg">
                                     Artive Entertainment adalah agen pemasaran digital yang menghubungkan kreativitas dengan strategi untuk mengangkat merek Anda ke level berikutnya. Kami spesialis dalam optimasi media sosial, video profesional,
                                     talent & influencer marketing, dan event organizer kreatif. Dengan pendekatan inovatif dan hasil yang terukur, kami membantu Anda menjangkau audiens lebih luas dan mencapai tujuan bisnis yang lebih besar.
                                 </p>
                             </div>
                             <div class="mb-4 ml-6">
                                 <h4 class="text-3xl font-bold">Visi Kami</h4>
-                                <p class="mt-1">Menjadi Pioner multimedia yang berdaya saing dengan ekosistem terintegrasi.</p>
+                                <p class="mt-1 text-base md:text-lg">Menjadi Pioner multimedia yang berdaya saing dengan ekosistem terintegrasi.</p>
                             </div>
                         </div>
                     </div>
@@ -253,7 +261,7 @@
                             <!-- Bagian Teks -->
                             <div class="w-[60%] p-4 flex flex-col justify-end">
                                 <h3 class="text-xl font-bold text-white">Photo</h3>
-                                <p class="mt-1 text-white">Abadikan momen berharga Anda dengan fotografi berkualitas tinggi, dari katalog produk hingga pernikahan dan acara khusus.</p>
+                                <p class="mt-1 text-sm text-white sm:text-base">Abadikan momen berharga Anda dengan fotografi berkualitas tinggi, dari katalog produk hingga pernikahan dan acara khusus.</p>
                                 <div class="self-end py-2">
                                     <a class="px-3 py-2 text-sm bg-neutral group text-secondary rounded-2xl" href="./layanan/photo.html">
                                         See more
@@ -273,7 +281,7 @@
                             <!-- Bagian Teks -->
                             <div class="w-[60%] p-4 flex flex-col justify-end">
                                 <h3 class="text-xl font-bold text-white">Video</h3>
-                                <p class="mt-1 text-white">Membuat momen tak terlupakan dengan kualitas visual yang memukau, mulai dari profil perusahaan hingga dokumentasi acara dan video kreatif lainnya.</p>
+                                <p class="mt-1 text-sm text-white sm:text-base">Membuat momen tak terlupakan dengan kualitas visual yang memukau, mulai dari profil perusahaan hingga dokumentasi acara dan video kreatif lainnya.</p>
                                 <div class="self-end py-2">
                                     <a class="px-3 py-2 text-sm bg-neutral group text-secondary rounded-2xl" href="./layanan/video.html">
                                         See more
@@ -293,7 +301,7 @@
                             <!-- Bagian Teks -->
                             <div class="w-[60%] p-4 flex flex-col justify-end">
                                 <h3 class="text-xl font-bold text-white">Talent</h3>
-                                <p class="mt-1 text-white">Penuhi kebutuhan acara Anda dengan talenta profesional, seperti voice over, MC, pembawa acara, hingga produser jingle dan pengumuman radio.</p>
+                                <p class="mt-1 text-sm text-white sm:text-base">Penuhi kebutuhan acara Anda dengan talenta profesional, seperti voice over, MC, pembawa acara, hingga produser jingle dan pengumuman radio.</p>
                                 <div class="self-end py-2">
                                     <a class="px-3 py-2 text-sm bg-neutral group text-secondary rounded-2xl" href="./layanan/talent.html">
                                         See more
@@ -313,7 +321,7 @@
                             <!-- Bagian Teks -->
                             <div class="w-[60%] p-4 flex flex-col justify-end">
                                 <h3 class="text-xl font-bold text-white">Social Media Optimization</h3>
-                                <p class="mt-1 text-white">Ciptakan konten menarik untuk media sosial Anda, termasuk feed Instagram, Reels, TikTok, YouTube Shorts, dan WhatsApp Blasting.</p>
+                                <p class="mt-1 text-sm text-white sm:text-base">Ciptakan konten menarik untuk media sosial Anda, termasuk feed Instagram, Reels, TikTok, YouTube Shorts, dan WhatsApp Blasting.</p>
                                 <div class="self-end py-2">
                                     <a class="px-3 py-2 text-sm bg-neutral group text-secondary rounded-2xl" href="./layanan/sosmed.html">
                                         See more
@@ -333,7 +341,7 @@
                             <!-- Bagian Teks -->
                             <div class="w-[60%] p-4 flex flex-col justify-end">
                                 <h3 class="text-xl font-bold text-white">Jasa & Sewa</h3>
-                                <p class="mt-1 text-white">Kami menawarkan berbagai layanan dan penyewaan peralatan untuk acara Anda, dari wedding organizer hingga photobooth studio dan sablon kemasan.</p>
+                                <p class="mt-1 text-sm text-white sm:text-base">Kami menawarkan berbagai layanan dan penyewaan peralatan untuk acara Anda, dari wedding organizer hingga photobooth studio dan sablon kemasan.</p>
                                 <div class="self-end py-2">
                                     <a class="px-3 py-2 text-sm bg-neutral group text-secondary rounded-2xl" href="./layanan/jasa.html">
                                         See more
@@ -353,7 +361,7 @@
                             <!-- Bagian Teks -->
                             <div class="w-[60%] p-4 flex flex-col justify-end">
                                 <h3 class="text-xl font-bold text-white">Branding / Marketing</h3>
-                                <p class="mt-1 text-white">Bantu bisnis Anda berkembang dengan desain logo yang kreatif, pembuatan website, dan layanan pemasaran yang efektif di berbagai platform digital.</p>
+                                <p class="mt-1 text-sm text-white sm:text-base">Bantu bisnis Anda berkembang dengan desain logo yang kreatif, pembuatan website, dan layanan pemasaran yang efektif di berbagai platform digital.</p>
                                 <div class="self-end py-2">
                                     <a class="px-3 py-2 text-sm bg-neutral group text-secondary rounded-2xl" href="./layanan/branding.html">
                                         See more

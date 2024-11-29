@@ -78,7 +78,7 @@
             <div class="relative flex items-center justify-between px-6">
                 <!-- Logo on the left -->
                 <div class="px-6 rounded-full shadow-sm bg-black/40 backdrop-blur-md">
-                    <a href="#" class="transition-all duration-300 hover:text-gray-300">
+                    <a href="./../" class="transition-all duration-300 hover:text-gray-300">
                         <img src="./../assets/img/logo/logo-white.png" alt="Logo" class="w-32" />
                     </a>
                 </div>
@@ -104,17 +104,25 @@
 
             <!-- Drawer Menu (Mobile) -->
             <div id="drawer" class="fixed inset-0 z-40 hidden bg-secondary/50">
-                <div id="drawerContent" class="absolute top-0 right-0 w-3/4 h-full p-6 text-white transition-transform duration-300 ease-in-out transform translate-x-full backdrop-blur-md bg-secondary/90">
-                    <div class="flex justify-end">
-                        <button id="closeDrawer" class="text-3xl text-white">
-                            <i class="ri-close-line"></i>
-                        </button>
+                <div id="drawerContent" class="absolute top-0 right-0 flex flex-col justify-between w-3/4 h-full p-6 text-white transition-transform duration-300 ease-in-out transform translate-x-full backdrop-blur-md bg-secondary/90">
+                    <div>
+                        <div class="flex justify-end">
+                            <button id="closeDrawer" class="text-3xl text-white">
+                                <i class="ri-close-line"></i>
+                            </button>
+                        </div>
+                        <nav class="mt-8 space-y-6">
+                            <a href="./../#" class="block transition-all duration-300 hover:text-gray-300">Home</a>
+                            <a href="./../#about" class="block transition-all duration-300 hover:text-gray-300">Tentang Kami</a>
+                            <a href="./../#services" class="block transition-all duration-300 hover:text-gray-300">Layanan</a>
+                        </nav>
                     </div>
-                    <nav class="mt-8 space-y-6">
-                        <a href="./../" class="block transition-all duration-300 hover:text-gray-300">Home</a>
-                        <a href="./../#about" class="block transition-all duration-300 hover:text-gray-300">Tentang Kami</a>
-                        <a href="./../#services" class="block transition-all duration-300 hover:text-gray-300">Layanan</a>
-                    </nav>
+                    <!-- Kontak Email di Bawah -->
+                    <div class="mt-8 space-y-3">
+                        <p class="mb-4 text-sm text-gray-300">Hubungi kami:</p>
+                        <a href="mailto:contact@example.com" class="block font-semibold transition-all duration-300 hover:text-gray-400">contact@example.com</a>
+                        <a href="tel:+6281234567890" class="block mt-2 font-semibold transition-all duration-300 hover:text-gray-400">+62 812-3456-7890</a>
+                    </div>
                 </div>
             </div>
         </header>
@@ -148,7 +156,7 @@
             <section id="description" class="py-6">
                 <div class="container grid grid-cols-1 gap-6 p-6 md:grid-cols-2 lg:grid-cols-4">
                     <div class="w-full col-span-1 p-2 space-y-3">
-                        <h3 class="text-4xl font-bold">Apa yang kami tawarkan?</h3>
+                        <h3 class="text-3xl font-bold md:text-4xl">Apa yang kami tawarkan?</h3>
                         <p>Layanan talent kami menghadirkan bakat terbaik untuk memastikan acara atau proyek Anda berjalan sukses, dengan keahlian yang sesuai kebutuhan dan tujuan Anda. Hubungi kami untuk berbicara lebih lanjut!</p>
                     </div>
                     <div class="grid grid-cols-1 col-span-3 gap-3 lg:grid-cols-2 md:grid-cols-2">
@@ -188,21 +196,40 @@
                         <p>Mewujudkan ide, menciptakan solusi.</p>
                     </div>
 
+                    <div class="flex flex-wrap items-center justify-center gap-2 mb-8">
+                        <label class="inline-flex items-center cursor-pointer">
+                            <input type="radio" name="works" value="all" class="hidden peer" checked />
+                            <span class="px-3 py-1 border-2 border-primary rounded-2xl peer-checked:bg-primary peer-checked:text-neutral hover:bg-primary hover:text-neutral">All</span>
+                        </label>
+                        <label class="inline-flex items-center cursor-pointer">
+                            <input type="radio" name="works" value="voice" class="hidden peer" />
+                            <span class="px-3 py-1 border-2 border-primary rounded-2xl peer-checked:bg-primary peer-checked:text-neutral hover:bg-primary hover:text-neutral">Voice Over</span>
+                        </label>
+                        <label class="inline-flex items-center cursor-pointer">
+                            <input type="radio" name="works" value="music" class="hidden peer" />
+                            <span class="px-3 py-1 border-2 border-primary rounded-2xl peer-checked:bg-primary peer-checked:text-neutral hover:bg-primary hover:text-neutral">Music Producer</span>
+                        </label>
+                        <label class="inline-flex items-center cursor-pointer">
+                            <input type="radio" name="works" value="host" class="hidden peer" />
+                            <span class="px-3 py-1 border-2 border-primary rounded-2xl peer-checked:bg-primary peer-checked:text-neutral hover:bg-primary hover:text-neutral">Host</span>
+                        </label>
+                    </div>
+
                     <div class="grid grid-cols-1 gap-3 pb-12 md:grid-cols-2 lg:grid-cols-3">
                         <!-- Card Basic -->
-                        <div class="overflow-hidden rounded-2xl">
+                        <div class="overflow-hidden work-portfolio rounded-2xl" data-category="voice">
                             <img src="https://placehold.co/600x400?text=ini images" alt="Portfolio" class="object-cover w-full h-full" />
                         </div>
                         <!-- Card Basic -->
-                        <div class="overflow-hidden rounded-2xl">
+                        <div class="overflow-hidden work-portfolio rounded-2xl" data-category="host">
                             <img src="https://placehold.co/600x400?text=ini images" alt="Portfolio" class="object-cover w-full h-full" />
                         </div>
                         <!-- Card Basic -->
-                        <div class="overflow-hidden rounded-2xl">
+                        <div class="overflow-hidden work-portfolio rounded-2xl" data-category="host">
                             <img src="https://placehold.co/600x400?text=ini images" alt="Portfolio" class="object-cover w-full h-full" />
                         </div>
                         <!-- Card Full Overlay -->
-                        <div class="relative overflow-hidden shadow-lg group rounded-2xl">
+                        <div class="relative overflow-hidden shadow-md work-portfolio group rounded-2xl" data-category="music">
                             <!-- Image -->
                             <img src="https://placehold.co/600x400?text=ini+images" alt="Portfolio" class="object-cover w-full h-full" />
                             <!-- Hover Overlay -->
@@ -217,7 +244,7 @@
                             </div>
                         </div>
                         <!-- Card Half Overlay -->
-                        <div class="relative overflow-hidden shadow-lg group rounded-2xl">
+                        <div class="relative overflow-hidden shadow-md work-portfolio group rounded-2xl" data-category="voice">
                             <!-- Image -->
                             <img src="https://placehold.co/600x400?text=ini+images" alt="Portfolio" class="object-cover w-full h-full" />
                             <!-- Hover Overlay -->
@@ -301,6 +328,7 @@
             referrerpolicy="no-referrer"
         ></script>
         <script src="./../assets/js/script.js"></script>
+        <script src="./../assets/js/detail.js"></script>
         <script>
             function togglePlayVideo(url) {
                 const overlay = document.getElementById("video-overlay");

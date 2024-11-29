@@ -61,16 +61,4 @@ $(document).ready(function () {
             }, 300);
         }
     });
-
-    // Inisialisasi GLightbox
-    const playVideo = function () {
-        const glightbox = GLightbox({
-            selector: ".glightbox",
-            touchNavigation: false,
-            loop: false,
-            autoplayVideos: true,
-            draggable: false,
-        });
-    };
-    playVideo();
 });
