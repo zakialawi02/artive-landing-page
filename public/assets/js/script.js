@@ -62,3 +62,12 @@ $(document).ready(function () {
         }
     });
 });
+
+$("<link>", {
+    rel: "canonical",
+    href: window.location.href,
+}).appendTo("head");
+$("<meta>", {
+    property: "og:url",
+    content: window.location.href,
+}).appendTo("head");
